@@ -95,7 +95,11 @@ parameter | allowed values           | meaning                                  
 
 ##### For XML:
 ```xml
-<!-- todo -->
+<ald:item-list xmlns:ald="ald://package/schema/2012">
+    <ald:item name="anyApp" version="0.1" id="1"/>
+    <ald:item name="aLib" version="2.3" id="2"/>
+    <!-- ... -->
+</ald:item-list>
 ```
 ***
 
