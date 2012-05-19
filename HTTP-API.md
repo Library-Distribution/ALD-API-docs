@@ -54,12 +54,17 @@ If these credentials are given and match  the requested user, more data is revea
 #### Response
 ##### For JSON:
 ```json
-{}
+{
+    "name" : "the user's nickname",
+    "mail" : "the user's mail address, but only if credentials match",
+    "joined" : "joined date, such as 2012-05-04",
+    "privileges" : "integer, by default 0"
+}
 ```
 
 ##### For XML:
 ```xml
-
+<!-- todo -->
 ```
 ***
 
@@ -90,7 +95,7 @@ parameter | allowed values           | meaning                                  
 
 ##### For XML:
 ```xml
-
+<!-- todo -->
 ```
 ***
 
@@ -133,12 +138,40 @@ parameter | meaning
 #### Response
 ##### For JSON:
 ```json
-{}
+{
+    "name" : "item name",
+    "version" : "item version",
+    "id" : "item GUID",
+    "description" : "item description text",
+    "type" : "'app' or 'lib'",
+    "user" : "user who uploaded this item",
+    "uploaded" : "upload date",
+    "authors" :
+        [
+            {
+                "name" : "author name",
+                "user-name" : "AHK forum user name",
+                "homepage" : "http://author-site.com",
+                "mail" : "author@example.com"
+            }
+        ],
+    "tags" : ["tag1", "tag2"],
+    "links" :
+        [
+            {
+              "name" : "name of the link",
+              "description" : "short description of link",
+              "href" : "http://... - address of link"
+            }
+        ],
+    "dependencies" : "... todo ...",
+    "requirements" : "... todo ..."
+}
 ```
 
 ##### For XML:
 ```xml
-
+<!-- todo -->
 ```
 
 ##### For `application/ald-package`:
