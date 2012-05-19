@@ -54,7 +54,7 @@ If these credentials are given and match  the requested user, more data is revea
 #### Response
 ##### For JSON:
 ```json
-
+{}
 ```
 
 ##### For XML:
@@ -133,7 +133,7 @@ parameter | meaning
 #### Response
 ##### For JSON:
 ```json
-
+{}
 ```
 
 ##### For XML:
