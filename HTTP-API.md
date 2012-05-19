@@ -1,5 +1,5 @@
 # Public HTTP API for ALD
-This describes the (planned) publicly available HTTP aPI for ALD. It will provide details about items, users and more.
+This describes the (planned) publicly available HTTP API for ALD. It will provide details about items, users and more.
 
 ## `Accept` header
 The `Accept` header can be used to determine if the response should be JSON (`application/json`) or XML (`text/xml`).
