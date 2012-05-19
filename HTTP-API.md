@@ -39,14 +39,14 @@ an array of user names
 
 parameter | meaning
 ----------|------------------------------------
-`name`    | the nickname of the user to return
+`user`    | the nickname of the user to return
 
 #### Optional POST parameters
 
 parameter | meaning
 ----------|--------------------------------------------------------------
-`name`    | a valid user name
-`mail`    | a valid user mail address. Either this or `name` must be given, not both.
+`user`    | a valid user name
+`mail`    | a valid user mail address. Either this or `user` must be given, not both.
 `password`| the password of the user specified in one of the above parameters
 
 If these credentials are given and match  the requested user, more data is revealed.
@@ -55,7 +55,7 @@ If these credentials are given and match  the requested user, more data is revea
 ##### For JSON:
 ```json
 {
-    "name" : "the user's nickname",
+    "user" : "the user's nickname",
     "mail" : "the user's mail address, but only if credentials match",
     "joined" : "joined date, such as 2012-05-04",
     "privileges" : "integer, by default 0"
@@ -74,12 +74,13 @@ If these credentials are given and match  the requested user, more data is revea
 `GET /items.php`
 
 #### Optional GET parameters
-parameter | allowed values           | meaning                                        | default
-----------|--------------------------|------------------------------------------------|----------------
-`type`    | `app`, `lib`             | restricts the type of returned items           | (none)
-`items`   | any integer >= 1 or `all`| the number of items to return                  | `all`
-`start`   | any integer >= 0         | the item to start at (returning)               | `0`
-`user`    | a valid user name        | restricts items to those uploaded by this user | (none)
+parameter | allowed values           | meaning                                            | default
+----------|--------------------------|----------------------------------------------------|----------------
+`type`    | `app`, `lib`             | restricts the type of returned items               | (none)
+`count`   | any integer >= 1 or `all`| the number of items to return                      | `all`
+`start`   | any integer >= 0         | the item to start at (returning)                   | `0`
+`user`    | a valid user name        | restricts items to those uploaded by this user     | (none)
+`name`    | a valid app or lib name  | restricts output to different versions of this item|
 
 #### Response
 ##### For JSON:
@@ -100,29 +101,6 @@ parameter | allowed values           | meaning                                  
     <ald:item name="aLib" version="2.3" id="2"/>
     <!-- ... -->
 </ald:item-list>
-```
-***
-
-### List versions for an item
-#### Request
-`GET /items.php?name=*`
-
-#### GET parameters
-parameter | meaning
-----------|------------------------
-`name`    | the name of the item
-
-#### Response
-##### For JSON:
-an array of available version numbers
-
-##### For XML:
-```xml
-<ald:version-list xmlns:ald="ald://package/schema/2012">
-    <ald:version value="1.0 beta 2"/>
-    <ald:version value="1.2 RC"/>
-    <!-- ... -->
-</ald:version-list>
 ```
 ***
 
