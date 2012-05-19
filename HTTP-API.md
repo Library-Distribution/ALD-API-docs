@@ -80,7 +80,7 @@ parameter | allowed values           | meaning                                  
 `count`   | any integer >= 1 or `all`| the number of items to return                      | `all`
 `start`   | any integer >= 0         | the item to start at (returning)                   | `0`
 `user`    | a valid user name        | restricts items to those uploaded by this user     | (none)
-`name`    | a valid app or lib name  | restricts output to different versions of this item|
+`name`    | a valid app or lib name  | restricts output to different versions of this item| (none)
 
 #### Response
 ##### For JSON:
