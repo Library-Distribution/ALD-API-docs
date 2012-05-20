@@ -1,6 +1,9 @@
 # Public HTTP API for ALD
 This describes the (planned) publicly available HTTP API for ALD. It will provide details about items, users and more.
 
+## Root URI
+The root URI for all API requests is `http://maulesel.ahk4.net/api/`.
+
 ## `Accept` header
 The `Accept` header can be used to determine if the response should be JSON (`application/json`) or XML (`text/xml`).
 It can also be used to download an item package (`application/ald-package`).
