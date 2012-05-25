@@ -74,7 +74,7 @@ If these credentials are given and match  the requested user, more data is revea
 ### List uploaded items
 #### Request:
 
-`GET /items.php`
+`GET /items/list.php`
 
 #### Optional GET parameters
 parameter | allowed values           | meaning                                            | default
@@ -109,9 +109,9 @@ parameter | allowed values           | meaning                                  
 
 ### Retrieve an item description
 #### Request
-`GET /items.php?id=*`
+`GET /items/describe.php?id=*`
 
-`GET /items.php?name=*&version=*`
+`GET /items/describe.php?name=*&version=*`
 
 #### GET parameters
 parameter | meaning
@@ -162,3 +162,52 @@ parameter | meaning
 ##### For `application/ald-package`:
 the package file (i.e. a ZIP-file).
 ***
+
+### Upload a new item
+#### Request
+`POST /items/add.php`
+
+#### POST parameters
+parameter | meaning
+----------|-----------------------------------------------
+`package` | the package file to upload *(not the path)*
+
+#### Restrictions
+This API requires [[authentication]].
+
+#### Response
+##### For JSON:
+```json
+{}
+```
+
+##### For XML:
+```xml
+<!-- ... -->
+```
+***
+
+### Delete an item from the server
+#### Request
+`DELETE /items/remove.php`
+
+#### GET parameters
+parameter | meaning
+----------|-----------------------------
+`id`      | the ID of the item to delete
+
+#### Restrictions
+This API requires [[authentication]]. Possibly email-confirmation will also be needed.
+
+This API is not yet implemented.
+
+#### Response
+##### For JSON:
+```json
+{}
+```
+
+##### For XML:
+```xml
+<!-- ... -->
+```
