@@ -26,9 +26,9 @@ an array of user names
 
 ##### For XML:
 ```xml
-<ald:user-list xmlns:ald="ald://package/schema/2012">
-    <ald:user name="user1"/>
-    <ald:user name="user2"/>
+<ald:user-list xmlns:ald="ald://api/users/list/schema/2012">
+    <ald:user ald:name="user1"/>
+    <ald:user ald:name="user2"/>
     <!-- ... -->
 </ald:user-list>
 ```
@@ -44,30 +44,26 @@ parameter | meaning
 ----------|------------------------------------
 `user`    | the nickname of the user to return
 
-#### Optional POST parameters
-
-parameter | meaning
-----------|--------------------------------------------------------------
-`user`    | a valid user name
-`mail`    | a valid user mail address. Either this or `user` must be given, not both.
-`password`| the password of the user specified in one of the above parameters
-
-If these credentials are given and match  the requested user, more data is revealed.
+If [[authentication]] is fulfilled and matches the requested user, the mail address is sent. Otherwise, it will be replaced by an md5-hash.
 
 #### Response
 ##### For JSON:
 ```json
 {
-    "user" : "the user's nickname",
-    "mail" : "the user's mail address, but only if credentials match",
-    "joined" : "joined date, such as 2012-05-04",
-    "privileges" : "integer, by default 0"
+    "user" : "AnyNickName",
+    "mail" : "example@example.com",
+    "joined" : "2012-05-04",
+    "privileges" : "0"
 }
 ```
 
 ##### For XML:
 ```xml
-<!-- todo -->
+<ald:user xmlns:ald="ald://api/users/describe/schema/2012"
+	ald:name="AnyNickName"
+	ald:mail="example@example.com"
+	ald:joined="2012-05-04"
+	ald:privileges="0"/>
 ```
 ***
 
@@ -100,8 +96,8 @@ parameter | allowed values           | meaning                                  
 ##### For XML:
 ```xml
 <ald:item-list xmlns:ald="ald://api/items/list/schema/2012">
-    <ald:item name="anyApp" version="0.1" id="1"/>
-    <ald:item name="aLib" version="2.3" id="2"/>
+    <ald:item ald:name="anyApp" ald:version="0.1" ald:id="e3891565e6de449b8f7058eb49344f3e"/>
+    <ald:item ald:name="aLib" ald:version="2.3" ald:id="0bf1abf386b841ffa2f4227e4639f34e"/>
     <!-- ... -->
 </ald:item-list>
 ```
@@ -183,7 +179,7 @@ This API requires [[authentication]].
 
 ##### For XML:
 ```xml
-<ald:item-id xmlns:ald='ald:/api/items/add/schema/2012' id='354FD39FF09341ABC45E10CCD47692FF'/>
+<ald:item-id xmlns:ald='ald:/api/items/add/schema/2012' ald:id='354FD39FF09341ABC45E10CCD47692FF'/>
 ```
 ***
 
