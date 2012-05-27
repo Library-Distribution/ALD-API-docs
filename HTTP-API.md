@@ -99,7 +99,7 @@ parameter | allowed values           | meaning                                  
 
 ##### For XML:
 ```xml
-<ald:item-list xmlns:ald="ald://package/schema/2012">
+<ald:item-list xmlns:ald="ald://api/items/list/schema/2012">
     <ald:item name="anyApp" version="0.1" id="1"/>
     <ald:item name="aLib" version="2.3" id="2"/>
     <!-- ... -->
@@ -156,7 +156,7 @@ parameter | meaning
 
 ##### For XML:
 ```xml
-<!-- todo -->
+<!-- todo, namespace: "ald://api/items/describe/schema/2012" -->
 ```
 
 ##### For `application/ald-package`:
@@ -178,12 +178,12 @@ This API requires [[authentication]].
 #### Response
 ##### For JSON:
 ```json
-{}
+{ "id" : "354FD39FF09341ABC45E10CCD47692FF" }
 ```
 
 ##### For XML:
 ```xml
-<!-- ... -->
+<ald:item-id xmlns:ald='ald:/api/items/add/schema/2012' id='354FD39FF09341ABC45E10CCD47692FF'/>
 ```
 ***
 
