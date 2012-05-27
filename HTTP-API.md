@@ -11,7 +11,7 @@ It can also be used to download an item package (`application/ald-package`).
 ## Allowed requests
 ### Retrieve a list of users
 #### Request
-`GET /users.php`
+`GET /users/list.php`
 
 #### Optional GET parameters:
 
@@ -36,7 +36,7 @@ an array of user names
 
 ### Retrieve a user description
 #### Request
-`GET /users.php?name=*`
+`GET /users/describe.php?name=*`
 
 #### GET parameters
 
