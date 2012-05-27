@@ -36,7 +36,7 @@ an array of user names
 
 ### Retrieve a user description
 #### Request
-`GET /users/describe.php?name=*`
+`GET /users/describe.php`
 
 #### GET parameters
 
@@ -44,9 +44,10 @@ parameter | meaning
 ----------|------------------------------------
 `user`    | the nickname of the user to return
 
-If [[authentication]] is fulfilled and matches the requested user, the mail address is sent. Otherwise, it will be replaced by an md5-hash.
-
 #### Response
+
+If [[authentication]] is fulfilled and matches the requested user, the mail address is included in the response. Otherwise, it will be replaced by an md5-hash.
+
 ##### For JSON:
 ```json
 {
@@ -105,9 +106,7 @@ parameter | allowed values           | meaning                                  
 
 ### Retrieve an item description
 #### Request
-`GET /items/describe.php?id=*`
-
-`GET /items/describe.php?name=*&version=*`
+`GET /items/describe.php`
 
 #### GET parameters
 parameter | meaning
@@ -115,6 +114,8 @@ parameter | meaning
 `id`      | the GUID of the item package to retrieve
 `name`    | the name of the item
 `version` | the exact version number of the item
+
+Either `id` or `name` and `version` must be given.
 
 #### Response
 ##### For JSON:
@@ -196,14 +197,3 @@ parameter | meaning
 This API requires [[authentication]]. Possibly email-confirmation will also be needed.
 
 This API is not yet implemented.
-
-#### Response
-##### For JSON:
-```json
-{}
-```
-
-##### For XML:
-```xml
-<!-- ... -->
-```
