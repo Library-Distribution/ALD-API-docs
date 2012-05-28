@@ -180,7 +180,7 @@ This API requires [[authentication]].
 
 ##### For XML:
 ```xml
-<ald:item-id xmlns:ald='ald:/api/items/add/schema/2012' ald:id='354FD39FF09341ABC45E10CCD47692FF'/>
+<ald:item-id xmlns:ald='ald://api/items/add/schema/2012' ald:id='354FD39FF09341ABC45E10CCD47692FF'/>
 ```
 ***
 
