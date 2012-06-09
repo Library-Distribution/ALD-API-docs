@@ -46,7 +46,7 @@ parameter | meaning
 
 #### Response
 
-If [[authentication]] is fulfilled and matches the requested user, the mail address is included in the response. Otherwise, it will be replaced by an md5-hash.
+If [[authentication]] is fulfilled and matches the requested user or a user with higher privileges, the mail address is included in the response. Otherwise, it will be replaced by an md5-hash.
 
 ##### For JSON:
 ```json
