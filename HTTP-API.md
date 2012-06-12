@@ -74,13 +74,14 @@ If [[authentication]] is fulfilled and matches the requested user or a user with
 `GET /items/list.php`
 
 #### Optional GET parameters
-parameter | allowed values           | meaning                                            | default
-----------|--------------------------|----------------------------------------------------|----------------
-`type`    | `app`, `lib`             | restricts the type of returned items               | (none)
-`count`   | any integer >= 1 or `all`| the number of items to return                      | `all`
-`start`   | any integer >= 0         | the item to start at (returning)                   | `0`
-`user`    | a valid user name        | restricts items to those uploaded by this user     | (none)
-`name`    | a valid app or lib name  | restricts output to different versions of this item| (none)
+parameter | allowed values                      | meaning                                             | default
+----------|-------------------------------------|-----------------------------------------------------|----------------
+`type`    | `app`, `lib`                        | restricts the type of returned items                | (none)
+`count`   | any integer >= 1 or `all`           | the number of items to return                       | `all`
+`start`   | any integer >= 0                    | the item to start at (returning)                    | `0`
+`user`    | a valid user name                   | restricts items to those uploaded by this user      | (none)
+`name`    | a valid app or lib name             | restricts output to different versions of this item | (none)
+`tags`    | a list of tags, separated by &#124; | restricts output to items who have this / at least one of these tags| (none)
 
 #### Response
 ##### For JSON:
