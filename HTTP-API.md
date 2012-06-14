@@ -8,6 +8,9 @@ The root URI for all API requests is `http://maulesel.ahk4.net/api/`.
 The `Accept` header can be used to determine if the response should be JSON (`application/json`) or XML (`text/xml`).
 It can also be used to download an item package (`application/ald-package`).
 
+## Authentication
+Some APIs require authentication. Currently, this is done via [[HTTP Basic Auth|http://en.wikipedia.org/wiki/Basic_access_authentication]]. In the future, all authenticated request will only work if accessed via HTTPS.
+
 ## Allowed requests
 ### Retrieve a list of users
 #### Request
