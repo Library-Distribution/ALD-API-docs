@@ -49,7 +49,7 @@ parameter | meaning
 
 #### Response
 
-If [[authentication]] is fulfilled and matches the requested user or a user with higher privileges, the mail address is included in the response. Otherwise, it will be replaced by an md5-hash.
+If authentication is fulfilled and matches the requested user or a user with higher privileges, the mail address is included in the response. Otherwise, it will be replaced by an md5-hash.
 
 ##### For JSON:
 ```json
@@ -175,7 +175,7 @@ parameter | meaning
 `package` | the package file to upload *(not the path)*
 
 #### Restrictions
-This API requires [[authentication]].
+This API requires authentication.
 
 #### Response
 ##### For JSON:
@@ -199,6 +199,6 @@ parameter | meaning
 `id`      | the ID of the item to delete
 
 #### Restrictions
-This API requires [[authentication]]. Possibly email-confirmation will also be needed.
+This API requires authentication. Possibly email-confirmation will also be needed.
 
 This API is not yet implemented.
