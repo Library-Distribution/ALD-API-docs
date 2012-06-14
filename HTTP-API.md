@@ -2,7 +2,7 @@
 This describes the (planned) publicly available HTTP API for ALD. It will provide details about items, users and more.
 
 ## Root URI
-The root URI for all API requests is `http://maulesel.ahk4.net/api/`.
+The HTTP root URI for all API requests is `http://maulesel.ahk4.net/api/`. HTTPS can be used via `https://ahk4.net/user/maulesel/api/`.
 
 ## `Accept` header
 The `Accept` header can be used to determine if the response should be JSON (`application/json`) or XML (`text/xml`).
