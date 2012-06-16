@@ -14,7 +14,9 @@ Some APIs require authentication. Currently, this is done via [[HTTP Basic Auth|
 ## Allowed requests
 ### Retrieve a list of users
 #### Request
-`GET /users/list.php`
+```
+GET /users/list
+```
 
 #### Optional GET parameters:
 
@@ -41,10 +43,10 @@ parameter   | allowed values              | meaning                       | defa
 
 ### Retrieve a user description
 #### Request
-`GET /users/describe.php`
-
-#### GET parameters
-**One** of these parameters must be passed.
+```
+GET /users/describe/:id
+GET /users/describe/:name
+```
 
 parameter | meaning
 ----------|------------------------------------
@@ -79,8 +81,9 @@ If authentication is fulfilled and matches the requested user or a user with hig
 
 ### List uploaded items
 #### Request:
-
-`GET /items/list.php`
+```
+GET /items/list
+```
 
 #### Optional GET parameters
 parameter | allowed values                      | meaning                                             | default
@@ -119,16 +122,16 @@ parameter | allowed values                      | meaning                       
 
 ### Retrieve an item description
 #### Request
-`GET /items/describe.php`
+```
+GET /items/describe/:id
+GET /items/describe/:name/:version
+```
 
-#### GET parameters
 parameter | meaning
 ----------|-----------------------------------------
 `id`      | the GUID of the item package to retrieve
 `name`    | the name of the item
 `version` | the exact version number of the item
-
-Either `id` or `name` and `version` must be given.
 
 #### Response
 ##### For JSON:
@@ -176,7 +179,9 @@ the package file (i.e. a ZIP-file).
 
 ### Upload a new item
 #### Request
-`POST /items/add.php`
+```
+POST /items/add
+```
 
 #### POST parameters
 parameter | meaning
@@ -200,12 +205,16 @@ This API requires authentication.
 
 ### Delete an item from the server
 #### Request
-`DELETE /items/remove.php`
+```
+DELETE /items/remove/:id
+DELETE /items/remove/:name/:version
+```
 
-#### GET parameters
 parameter | meaning
 ----------|-----------------------------
 `id`      | the ID of the item to delete
+`name`    | the name of the item
+`version` | the exact version number of the item
 
 #### Restrictions
 This API requires authentication. Possibly email-confirmation will also be needed.
