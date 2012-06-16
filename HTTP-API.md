@@ -94,7 +94,9 @@ parameter | allowed values                      | meaning                       
     {
       "name" : "the item name",
       "id" : "the id of the item",
-      "version" : "the version of the item"
+      "version" : "the version of the item",
+      "user" : "nickname of the user who uploaded this",
+      "userID" : "GUID of the user who uploaded this"
     }
 ]
 ```
@@ -102,8 +104,8 @@ parameter | allowed values                      | meaning                       
 ##### For XML:
 ```xml
 <ald:item-list xmlns:ald="ald://api/items/list/schema/2012">
-    <ald:item ald:name="anyApp" ald:version="0.1" ald:id="e3891565e6de449b8f7058eb49344f3e"/>
-    <ald:item ald:name="aLib" ald:version="2.3" ald:id="0bf1abf386b841ffa2f4227e4639f34e"/>
+    <ald:item ald:name="anyApp" ald:version="0.1" ald:id="e3891565e6de449b8f7058eb49344f3e" ald:user="maul.esel" ald:user-id="248b7165a5f44bbdad838388dba6106a"/>
+    <ald:item ald:name="aLib" ald:version="2.3" ald:id="0bf1abf386b841ffa2f4227e4639f34e" ald:user="maul.esel" ald:user-id="248b7165a5f44bbdad8-8388dba6106a"/>
     <!-- ... -->
 </ald:item-list>
 ```
