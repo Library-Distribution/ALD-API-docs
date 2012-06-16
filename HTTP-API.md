@@ -25,13 +25,15 @@ parameter   | allowed values              | meaning                       | defa
 
 #### Response
 ##### For JSON:
-an array of user names
+```json
+[ { "name" : "user nickname", "id" : "user ID (GUID)" } ]
+```
 
 ##### For XML:
 ```xml
 <ald:user-list xmlns:ald="ald://api/users/list/schema/2012">
-    <ald:user ald:name="user1"/>
-    <ald:user ald:name="user2"/>
+    <ald:user ald:name="user1" ald:id="48e3a5c62f3f4055a31b34611e78d9f2"/>
+    <ald:user ald:name="user2" ald:id="b5fa0b54de54496eac96177bf245569c"/>
     <!-- ... -->
 </ald:user-list>
 ```
@@ -42,10 +44,12 @@ an array of user names
 `GET /users/describe.php`
 
 #### GET parameters
+**One** of these parameters must be passed.
 
 parameter | meaning
 ----------|------------------------------------
-`user`    | the nickname of the user to return
+`name`    | the nickname of the user to return
+`id`      |  the id of the user to return
 
 #### Response
 
@@ -54,10 +58,11 @@ If authentication is fulfilled and matches the requested user or a user with hig
 ##### For JSON:
 ```json
 {
-    "user" : "AnyNickName",
+    "name" : "AnyNickName",
     "mail" : "example@example.com",
     "joined" : "2012-05-04",
-    "privileges" : "0"
+    "privileges" : "0",
+    "id" : "b5fa0b54de54496eac96177bf245569c"
 }
 ```
 
@@ -67,7 +72,8 @@ If authentication is fulfilled and matches the requested user or a user with hig
 	ald:name="AnyNickName"
 	ald:mail="example@example.com"
 	ald:joined="2012-05-04"
-	ald:privileges="0"/>
+	ald:privileges="0"
+        ald:id="b5fa0b54de54496eac96177bf245569c"/>
 ```
 ***
 
@@ -134,6 +140,7 @@ Either `id` or `name` and `version` must be given.
     "description" : "item description text",
     "type" : "'app' or 'lib'",
     "user" : "user who uploaded this item",
+    "userID" : "b5fa0b54de54496eac96-177bf245569c"
     "uploaded" : "upload date",
     "authors" :
         [
