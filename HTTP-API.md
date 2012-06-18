@@ -143,7 +143,7 @@ parameter | meaning
     "description" : "item description text",
     "type" : "'app' or 'lib'",
     "user" : "user who uploaded this item",
-    "userID" : "b5fa0b54de54496eac96-177bf245569c"
+    "userID" : "b5fa0b54de54496eac96-177bf245569c",
     "uploaded" : "upload date",
     "authors" :
         [
