@@ -39,6 +39,8 @@ parameter   | allowed values              | meaning                       | defa
     <!-- ... -->
 </ald:user-list>
 ```
+XML Schema available at http://maulesel.ahk4.net/api/schema/users/list.xsd.
+
 ***
 
 ### Retrieve a user description
@@ -77,6 +79,8 @@ If authentication is fulfilled and matches the requested user or a user with hig
 	ald:privileges="0"
         ald:id="b5fa0b54de54496eac96177bf245569c"/>
 ```
+XML Schema available at http://maulesel.ahk4.net/api/schema/users/describe.xsd.
+
 ***
 
 ### List uploaded items
@@ -118,6 +122,8 @@ parameter | allowed values                      | meaning                       
     <!-- ... -->
 </ald:item-list>
 ```
+XML Schema available at http://maulesel.ahk4.net/api/schema/items/list.xsd.
+
 ***
 
 ### Retrieve an item description
@@ -201,6 +207,8 @@ This API requires authentication.
 ```xml
 <ald:item-id xmlns:ald='ald://api/items/add/schema/2012' ald:id='354FD39FF09341ABC45E10CCD47692FF'/>
 ```
+XML Schema available at http://maulesel.ahk4.net/api/schema/items/add.xsd.
+
 ***
 
 ### Delete an item from the server
