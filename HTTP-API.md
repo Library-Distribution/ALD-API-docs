@@ -39,7 +39,7 @@ parameter   | allowed values              | meaning                       | defa
     <!-- ... -->
 </ald:user-list>
 ```
-XML Schema available at http://maulesel.ahk4.net/api/schema/2012/users/list.xsd.
+XML Schema available at http://maulesel.ahk4.net/schema/2012/api/users/list.xsd.
 
 ***
 
@@ -79,7 +79,7 @@ If authentication is fulfilled and matches the requested user or a user with hig
 	ald:privileges="0"
         ald:id="b5fa0b54de54496eac96177bf245569c"/>
 ```
-XML Schema available at http://maulesel.ahk4.net/api/schema/2012/users/describe.xsd.
+XML Schema available at http://maulesel.ahk4.net/schema/2012/api/users/describe.xsd.
 
 ***
 
@@ -122,7 +122,7 @@ parameter | allowed values                      | meaning                       
     <!-- ... -->
 </ald:item-list>
 ```
-XML Schema available at http://maulesel.ahk4.net/api/schema/2012/items/list.xsd.
+XML Schema available at http://maulesel.ahk4.net/schema/2012/api/items/list.xsd.
 
 ***
 
@@ -207,7 +207,7 @@ This API requires authentication.
 ```xml
 <ald:item-id xmlns:ald='ald://api/items/add/schema/2012' ald:id='354FD39FF09341ABC45E10CCD47692FF'/>
 ```
-XML Schema available at http://maulesel.ahk4.net/api/schema/2012/items/add.xsd.
+XML Schema available at http://maulesel.ahk4.net/schema/2012/api/items/add.xsd.
 
 ***
 
