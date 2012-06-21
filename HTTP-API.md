@@ -83,6 +83,33 @@ XML Schema available at http://maulesel.ahk4.net/schema/2012/api/users/describe.
 
 ***
 
+### Modify a user
+#### Request
+```
+POST /users/modify/:id
+POST /users/modify/:name
+```
+
+parameter | meaning
+----------|-------------------------------
+`id`      | the user ID of the user to modify
+`name`    | the nickname of the user to modify
+
+#### Optional POST parameters
+parameter | meaning
+----------|----------------------
+`name`    | a new nickname for the user
+`mail`    | a new email address for the user (requires account reactivation)
+`password`| a new password for the user
+
+#### Restrictions
+This API requires authentication. For modification of the mail address, account reactivation via an email sent to the new address is required.
+
+#### Response
+None (status code 204).
+
+***
+
 ### List uploaded items
 #### Request:
 ```
