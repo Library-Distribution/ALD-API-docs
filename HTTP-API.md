@@ -104,6 +104,8 @@ parameter | meaning
 
 #### Restrictions
 This API requires authentication. For modification of the mail address, account reactivation via an email sent to the new address is required.
+###### Note:
+This API is temporary, it might be removed if / when ALD is somehow integrated into autohotkey.com or another site.
 
 #### Response
 None (status code 204).
