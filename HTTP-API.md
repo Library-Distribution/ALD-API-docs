@@ -6,7 +6,7 @@ The HTTP root URI for all API requests is `http://maulesel.ahk4.net/api/`. HTTPS
 
 ## `Accept` header
 The `Accept` header can be used to determine if the response should be JSON (`application/json`) or XML (`text/xml`).
-It can also be used to download an item package (`application/ald-package`).
+It can also be used to download an item package (`application/x-ald-package`).
 
 ## Authentication
 Some APIs require authentication. Currently, this is done via [[HTTP Basic Auth|http://en.wikipedia.org/wiki/Basic_access_authentication]]. All authenticated requests will only work if accessed via HTTPS.
@@ -208,7 +208,7 @@ parameter | meaning
 <!-- todo, namespace: "ald://api/items/describe/schema/2012" -->
 ```
 
-##### For `application/ald-package`:
+##### For `application/x-ald-package`:
 the package file (i.e. a ZIP-file).
 ***
 
