@@ -127,7 +127,7 @@ parameter | allowed values                      | meaning                       
 `user`    | a valid user name                   | restricts items to those uploaded by this user      | (none)
 `name`    | a valid app or lib name             | restricts output to different versions of this item | (none)
 `tags`    | a list of tags, separated by &#124; | restricts output to items who have this / at least one of these tags| (none)
-`latest`  | `false` or `0` to disable, anything else to enable this filter | restricts output to the latest version of each item found **(not fully implemented)**| `0`
+`level`   | `latest`, `first`                   | restricts output to the latest / first versions     | (none)
 
 #### Response
 ##### For JSON:
