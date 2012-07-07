@@ -127,7 +127,8 @@ parameter | allowed values                      | meaning                       
 `user`    | a valid user name                   | restricts items to those uploaded by this user      | (none)
 `name`    | a valid app or lib name             | restricts output to different versions of this item | (none)
 `tags`    | a list of tags, separated by &#124; | restricts output to items who have this / at least one of these tags| (none)
-`version`   | `latest`, `first`                   | restricts output to the latest / first versions     | (none)
+`version`   | `latest`, `first`                 | restricts output to the latest / first versions     | (none)
+`unreviewed` | `true` / `1` or `false` / `0`    | if enabled, includes unreviewed items in the output | `false`
 
 #### Response
 ##### For JSON:
@@ -174,6 +175,7 @@ parameter | meaning
 {
     "name" : "item name",
     "version" : "item version",
+    "reviewed" : true,
     "id" : "item GUID",
     "description" : "item description text",
     "type" : "'app' or 'lib'",
