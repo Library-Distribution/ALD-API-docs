@@ -177,6 +177,7 @@ parameter | meaning
     "name" : "item name",
     "version" : "item version",
     "reviewed" : true,
+    "default" : false,
     "id" : "item GUID",
     "description" : "item description text",
     "type" : "'app' or 'lib'",
