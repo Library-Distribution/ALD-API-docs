@@ -129,6 +129,7 @@ parameter | allowed values                      | meaning                       
 `tags`    | a list of tags, separated by &#124; | restricts output to items who have this / at least one of these tags| (none)
 `version`   | `latest`, `first`                 | restricts output to the latest / first versions     | (none)
 `unreviewed` | `true` / `1` or `false` / `0`    | if enabled, includes unreviewed items in the output | `false`
+`default` | `true` / `1` or `false` / `0`       | if enabled, restricts output to items for the stdlib| `false`
 
 #### Response
 ##### For JSON:
