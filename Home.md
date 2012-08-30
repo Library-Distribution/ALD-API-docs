@@ -5,3 +5,4 @@ Check out the following subjects:
 * [[ALD package format]]
 * [[HTTP API]]
     * [[Registration]]
+    * [[User API]]
