@@ -43,5 +43,3 @@ variable       | description
 `{%MAIL%}`     | The user's email address
 `{%PASSWORD%}` | The user's password in cleartext. Be careful and only include this if necessary.
 `{%ID%}`       | The registration session ID which can be used to retrieve the chaptcha.
-
-## Obtain
