@@ -6,3 +6,4 @@ Check out the following subjects:
 * [[HTTP API]]
     * [[Registration]]
     * [[User API]]
+    * [[Item API]]
