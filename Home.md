@@ -7,3 +7,4 @@ Check out the following subjects:
     * [[Item API]]
     * [[User API]]
     * [[Registration]]
+    * [[Stdlib API]]
