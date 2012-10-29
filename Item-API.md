@@ -21,7 +21,7 @@ parameter | allowed values                      | meaning                       
 `tags`    | a list of tags, separated by &#124; | restricts output to items who have this / at least one of these tags| (none)
 `version`   | `latest`, `first`                 | restricts output to the latest / first versions     | (none)
 `reviewed` | <ul><li>`-1` / `no` / `false`</li><li>`0` / `both`</li><li>`+1` / `1` / `yes` / `true`</li></ul> | defines whether to return unreviewed items - the first 3 values return only unreviewed ones, the 2nd group returns both and the last 4 values return only reviewed items. | `true`
-`stdlib`  | <ul><li>`-1` / `no` / `false`</li><li>`0` / `both`</li><li>`+1` / `1` / `yes` / `true`</li></ul> | defines how to include libraries in the stdlib - the first 3 values return only items *not* in the stdlib, the 2nd group returns both and the last 4 values return only items in the stdlib | `both`
+***deprecated:*** `stdlib` | <ul><li>`-1` / `no` / `false`</li><li>`0` / `both`</li><li>`+1` / `1` / `yes` / `true`</li></ul> | defines how to include libraries in the stdlib - the first 3 values return only items *not* in the stdlib, the 2nd group returns both and the last 4 values return only items in the stdlib | `both`
 
 ### Response
 #### For JSON:
@@ -100,6 +100,7 @@ parameter | meaning
     "requirements" : "... todo ..."
 }
 ```
+***Note:*** the `"default"` field is deprecated and will be removed soon.
 
 #### For XML:
 ```xml
