@@ -114,7 +114,7 @@ This API requires authentication. The user must be part of the stdlib team.
 
 #### For XML:
 ```xml
-<!-- todo -->
+<ald:version xmlns:ald="ald://api/stdlib/releases/create/schema/2012">1.0.0</ald:version>
 ```
 
 ## Delete an unpublished release
