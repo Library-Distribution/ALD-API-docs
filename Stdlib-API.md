@@ -37,7 +37,7 @@ parameter | description
 
 ## Describing a release
 ### Status
-***planned***
+***in development***
 
 ### Request
 ```
