@@ -82,7 +82,7 @@ parameter | description
 
 ## Creating a new release
 ### Status
-***planned***
+***in development***
 
 ### Request
 ```
@@ -119,7 +119,7 @@ This API requires authentication. The user must be part of the stdlib team.
 
 ## Delete an unpublished release
 ### Status
-***planned***
+***developed, but not live***
 
 ### Request
 ```
