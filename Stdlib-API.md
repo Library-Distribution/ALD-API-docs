@@ -14,7 +14,6 @@ GET /stdlib/releases/list
 ### Optional GET parameters
 parameter | description
 ----------|------------------------
-`stable`  | whether only stable releases should be returned or prerelease as well
 `released`| if the requesting user has the required privileges, show unreleased releases as well
 
 
