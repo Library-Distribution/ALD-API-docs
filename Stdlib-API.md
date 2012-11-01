@@ -82,7 +82,7 @@ parameter | description
 
 ## Creating a new release
 ### Status
-***in development***
+***developed, but not live***
 
 ### Request
 ```
@@ -93,6 +93,11 @@ POST /stdlib/releases/create/:type
 parameter | description
 ----------|-----------------------
 `type`    | the update type for the new release: `patch`, `minor` or `major`
+
+### Optional GET parameters
+parameter | description
+----------|-----------------------
+`base`    | the release to base the new release on (in terms of version number). Can either be `all` (default) or `published`.
 
 ### Optional POST parameters
 parameter | description
