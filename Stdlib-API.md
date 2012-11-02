@@ -3,7 +3,7 @@ With the stdlib API you can retrieve information about the current and older std
 # API requests
 ## List stdlib releases
 ### Status
-***in development***
+***developed, but not live***
 
 ### Request
 
@@ -12,9 +12,9 @@ GET /stdlib/releases/list
 ```
 
 ### Optional GET parameters
-parameter | description
-----------|------------------------
-`released`| if the requesting user has the required privileges, show unreleased releases as well
+parameter  | description
+-----------|------------------------
+`published`| `0`, `both`: if the requesting user has the required privileges, show unpublished releases as well; `-1`, `false`, `no`: show *only* unpublished releases; `1`, `+1`, `true`, `yes` (default) : show only published releases
 
 
 ### Response
