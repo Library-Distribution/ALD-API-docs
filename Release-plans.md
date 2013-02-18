@@ -2,7 +2,7 @@ This is a rough estimate on how the first releases will be handled. No dates, no
 
 ## Release 0.1.0
 **Featuring:**
-* registration API ([PR #23](http://github.com/maul-esel/ALD-API/pull/23))
+* registration API ([PR #23](http://github.com/maul-esel/ALD-API/pull/23)) &#x2713;
 * stdlib API ([PR #15](http://github.com/maul-esel/ALD-API/pull/15))
 
 ## Release 0.2.0
