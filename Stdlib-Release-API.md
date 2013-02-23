@@ -63,14 +63,6 @@ parameter | description
                 "version" : "1.2.0",
                 "id" : "00527D3DE2FF494CADD56BF754F3246D"
             }
-        ],
-    "frameworks" :
-        [
-            {
-                "name" : "Forms",
-                "version" : "1.0.0",
-                "id" : "00528E3DE2FF494CADD56BF754F3246D"
-            }
         ]
 }
 ```
