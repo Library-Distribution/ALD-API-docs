@@ -1,4 +1,4 @@
-With the stdlib API you can retrieve information about the current and older stdlib releases.
+With the stdlib release API you can retrieve information about the current and older stdlib releases.
 
 # API requests
 ## List stdlib releases
@@ -162,28 +162,6 @@ parameter | description
 `version` | bump the version number
 `description` | change the release's short description
 `date`    | The date the release will be automatically published
-
-### Restrictions
-This API requires authentication. The user must be part of the stdlib team.
-
-### Response
-empty (`204 No content`)
-
-## Modify an unpublished release
-The only modification allowed is to delay the update or inclusion of a library or framework in the stdlib.
-
-### Status
-***planned***
-
-### Request
-```
-POST /stdlib/releases/exclude/:id
-```
-
-### GET parameters
-parameters | description
------------|---------------------
-`id`       | The ID of the library or framework to exclude. If another version is already included, it will stay unmodified, else the item will not be included at all.
 
 ### Restrictions
 This API requires authentication. The user must be part of the stdlib team.
