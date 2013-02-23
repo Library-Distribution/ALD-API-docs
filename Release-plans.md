@@ -15,6 +15,8 @@ This is a rough estimate on how the first releases will be handled. No dates, no
 ## Release 0.2.0
 **Featuring:**
 * sorting parameters to all listing APIs ([PR #24](http://github.com/maul-esel/ALD-API/pull/24))
+* extended version filters
+* complete author handling, including filters
 
 **Milestone:**
 [0.2.0](https://github.com/maul-esel/ALD-API/issues/milestones)
