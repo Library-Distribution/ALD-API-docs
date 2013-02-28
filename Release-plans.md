@@ -24,6 +24,7 @@ This is a rough estimate on how the first releases will be handled. No dates, no
 ## Release 0.3.0
 **Featuring:**
 * full review handling
+* consistent and useful error handling
 
 ### Release 0.3.x
 **Featuring:**
