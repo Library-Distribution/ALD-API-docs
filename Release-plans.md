@@ -7,7 +7,7 @@ This is a rough estimate on how the first releases will be handled. No dates, no
 * variable item types ([PR #16](http://github.com/maul-esel/ALD-API/pull/16)) &#x2713;
 * suspension management ([PR #22](http://github.com/maul-esel/ALD-API/pull/22)) &#x2713;
 * registration API ([PR #23](http://github.com/maul-esel/ALD-API/pull/23)) &#x2713;
-* stdlib API ([PR #15](http://github.com/maul-esel/ALD-API/pull/15))
+* stdlib API ([PR #15](http://github.com/maul-esel/ALD-API/pull/15), [PR #25](http://github.com/maul-esel/ALD-API/pull/25))
 
 **Milestone:**
 [0.1.0](https://github.com/maul-esel/ALD-API/issues/milestones)
