@@ -16,7 +16,6 @@ This is a rough estimate on how the first releases will be handled. No dates, no
 **Featuring:**
 * sorting parameters to all listing APIs ([PR #24](http://github.com/maul-esel/ALD-API/pull/24))
 * extended version filters
-* complete author handling, including filters
 * item API changes ([PR #26](https://github.com/maul-esel/ALD-API/pull/26))
 
 **Milestone:**
@@ -43,6 +42,7 @@ This is a rough estimate on how the first releases will be handled. No dates, no
 ## Release 0.6.0
 **Featuring:**
 * various schema changes ([issues](http://github.com/maul-esel/ALD-API/issues?labels=schema&state=open))
+* complete author handling, including filters
 
 ## Release 0.7.0
 **Featuring:**
