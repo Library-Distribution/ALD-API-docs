@@ -127,5 +127,3 @@ This API requires authentication.
 
 ### Response
 empty (`204 No content`)
-
-XML Schema available at http://maulesel.ahk4.net/schema/2012/api/items/add.xsd.
