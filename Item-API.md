@@ -116,25 +116,16 @@ the package file (i.e. a ZIP-file).
 
 ### Request
 ```
-POST /items/add
+PUT /items/add
 ```
 
-### POST parameters
-parameter | meaning
-----------|-----------------------------------------------
-`package` | the package file to upload *(not the path)*
+### POST data
+The package file to upload. Note that the `Content-Length` header must be set appropriately.
 
 ### Restrictions
 This API requires authentication.
 
 ### Response
-#### For JSON:
-```json
-{ "id" : "354FD39FF09341ABC45E10CCD47692FF" }
-```
+empty (`204 No content`)
 
-#### For XML:
-```xml
-<ald:item-id xmlns:ald='ald://api/items/add/schema/2012' ald:id='354FD39FF09341ABC45E10CCD47692FF'/>
-```
 XML Schema available at http://maulesel.ahk4.net/schema/2012/api/items/add.xsd.
