@@ -9,8 +9,8 @@ This is a rough estimate on how the first releases will be handled. No dates, no
 * registration API ([PR #23](http://github.com/maul-esel/ALD-API/pull/23)) &#x2713;
 * item API changes ([PR #26](https://github.com/maul-esel/ALD-API/pull/26)) &#x2713;
 
-**Milestone:**
-[0.1.0](https://github.com/maul-esel/ALD-API/issues/milestones)
+**Milestone:** [0.1.0](https://github.com/maul-esel/ALD-API/issues/milestones)
+**Tag:** [0.1.0](https://github.com/maul-esel/ALD-API/tree/0.1.0)
 
 ## Release 0.2.0
 **Featuring:**
