@@ -5,23 +5,32 @@ The item API is the central part of the API. It can be used to retrieve informat
 ### Status
 ***live***
 
+### Release
+***[0.1.0](../tree/0.1.0)***
+
 ### Request
 ```
 GET /items/list
 ```
 
-### Optional GET parameters
-parameter | allowed values                      | meaning                                             | default
-----------|-------------------------------------|-----------------------------------------------------|----------------
-`type`    | `app`, `lib`                        | restricts the type of returned items                | (none)
-`count`   | any integer >= 1 or `all`           | the number of items to return                       | `all`
-`start`   | any integer >= 0                    | the item to start at (returning)                    | `0`
-`user`    | a valid user name                   | restricts items to those uploaded by this user      | (none)
-`name`    | a valid app or lib name             | restricts output to different versions of this item | (none)
-`tags`    | a list of tags, separated by &#124; | restricts output to items who have this / at least one of these tags| (none)
-`version`   | `latest`, `first`                 | restricts output to the latest / first versions     | (none)
-`reviewed` | <ul><li>`-1` / `no` / `false`</li><li>`0` / `both`</li><li>`+1` / `1` / `yes` / `true`</li></ul> | defines whether to return unreviewed items - the first 3 values return only unreviewed ones, the 2nd group returns both and the last 4 values return only reviewed items. | `true`
-***deprecated:*** `stdlib` | <ul><li>`-1` / `no` / `false`</li><li>`0` / `both`</li><li>`+1` / `1` / `yes` / `true`</li></ul> | defines how to include libraries in the stdlib - the first 3 values return only items *not* in the stdlib, the 2nd group returns both and the last 4 values return only items in the stdlib | `both`
+### Filters
+parameter | description | values    | default
+----------|-------------|-----------|-----------
+`type`    | the type the item should have | one of the item types supported by the server | all types
+`user`    | the user who uploaded the item | a GUID identifying the user | all users
+`name`    | the name of the item (list its versions) | any item name supported by the server | all names
+`version` | a special version of the items to be listed | `latest`, `first` | unspecified
+`tags`    | the tags one of which the item should have | a list of tags, separated by `|` | no tags
+`stdlib`  | ***(deprecated)*** whether the item should be in the stdlib or not | one of the following 3 states: `no`/`false`/`-1`, `both`/`0`, `yes`/`true`/`1`/`+1` | `both` / `0`
+`reviewed` | whether reviewed or unreviewed items should be shown | same as above | `true`
+`downloads`, `downloads-min`, `downloads-max` | the exact, minimum or maximum number of downloads the item should have (min and max can be combined, exact overrides both) | any positive integer (or `0`) | unspecified
+`rating`, `rating-min`, `rating-max` | the exact, minimum or maximum average rating the item should have (as above, min and max can be combined but are overriden by exact) | any positive integer (or `0`) | unspecified
+
+### Output restrictions
+parameter | description
+----------|-----------------------
+`count`   | the number of items to output, or `all`
+`start`   | start output at the given (zero-based) item index (sorting is not guaranteed, in work for 0.2.0)
 
 ### Response
 #### For JSON:
@@ -29,10 +38,13 @@ parameter | allowed values                      | meaning                       
 [
     {
       "name" : "the item name",
+      "type" : "the item type",
       "id" : "the id of the item",
       "version" : "the version of the item",
-      "user" : "nickname of the user who uploaded this",
-      "userID" : "GUID of the user who uploaded this"
+      "user" : {
+          "name" : "nickname of the user who uploaded this",
+          "id" : "GUID of the user who uploaded this"
+      }
     }
 ]
 ```
@@ -45,7 +57,7 @@ parameter | allowed values                      | meaning                       
     <!-- ... -->
 </ald:item-list>
 ```
-XML Schema available at http://maulesel.ahk4.net/schema/2012/api/items/list.xsd.
+XML Schema available at http://api.libba.net/schema/items/list.xsd.
 
 ## Retrieve an item description
 ### Status
