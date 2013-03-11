@@ -17,7 +17,7 @@ This is a rough estimate on how the first releases will be handled. No dates, no
 **Featuring:**
 * sorting parameters to all listing APIs ([PR #24](http://github.com/maul-esel/ALD-API/pull/24))
 * extended version filters
-* stdlib API ([PR #15](http://github.com/maul-esel/ALD-API/pull/15), [PR #25](http://github.com/maul-esel/ALD-API/pull/25) &#x2713;)
+* stdlib API ([PR #15](http://github.com/maul-esel/ALD-API/pull/15), [PR #25](http://github.com/maul-esel/ALD-API/pull/25) &#x2713;, [PR #28](http://github.com/maul-esel/ALD-API/pull/28))
 
 **Milestone:**
 [0.2.0](https://github.com/maul-esel/ALD-API/issues/milestones)
