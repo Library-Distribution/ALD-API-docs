@@ -27,6 +27,8 @@ This is a rough estimate on how the first releases will be handled. No dates, no
 * full review handling
 * consistent and useful error handling
 
+**Milestone:** [0.3.0](https://github.com/maul-esel/ALD-API/issues/milestones)
+
 ### Release 0.3.x
 **Featuring:**
 * coding style fixes
@@ -36,14 +38,20 @@ This is a rough estimate on how the first releases will be handled. No dates, no
 **Featuring:**
 * switching to hashes instead of GUIDs ([issue #11](http://github.com/maul-esel/ALD-API/issues/11))
 
+**Milestone:** [0.4.0](https://github.com/maul-esel/ALD-API/issues/milestones)
+
 ## Release 0.5.0
 **Featuring:**
 * branch support ([issue #12](http://github.com/maul-esel/ALD-API/issues/12))
+
+**Milestone:** [0.5.0](https://github.com/maul-esel/ALD-API/issues/milestones)
 
 ## Release 0.6.0
 **Featuring:**
 * various schema changes ([issues](http://github.com/maul-esel/ALD-API/issues?labels=schema&state=open))
 * complete author handling, including filters
+
+**Milestone:** [0.6.0](https://github.com/maul-esel/ALD-API/issues/milestones)
 
 ## Release 0.7.0
 **Featuring:**
