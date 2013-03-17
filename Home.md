@@ -6,6 +6,7 @@ Check out the following subjects:
 * [[HTTP API]]
     * [[Item API]]
     * [[User API]]
+        * [[Suspension API]]
     * [[Registration]]
     * [[Stdlib API]]
         * [[Stdlib Release API]]
