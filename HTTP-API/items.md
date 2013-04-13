@@ -1,3 +1,6 @@
+---
+title: items
+---
 The item API is the central part of the API. It can be used to retrieve information about items and to download them.
 
 # API requests

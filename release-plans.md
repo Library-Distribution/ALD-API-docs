@@ -1,3 +1,6 @@
+---
+title: Release plans
+---
 This is a rough estimate on how the first releases will be handled. No dates, no obligations, just expectations.
 
 ## Release 0.1.0 &#x2713;

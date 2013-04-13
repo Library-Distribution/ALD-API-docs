@@ -1,3 +1,6 @@
+---
+title: Stdlib Releases
+---
 With the stdlib release API you can retrieve information about the current and older stdlib releases.
 
 # API requests

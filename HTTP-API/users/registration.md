@@ -1,3 +1,6 @@
+---
+title: Registration
+---
 # Workflow
 Registration is now part of the API. The workflow is as follows:
 

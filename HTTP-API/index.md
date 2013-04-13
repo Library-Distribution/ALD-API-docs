@@ -1,3 +1,7 @@
+---
+title: HTTP API
+permalink: index.html
+---
 # Public HTTP API for ALD
 This describes the publicly available HTTP API for ALD. It will provide details about items, users and more.
 

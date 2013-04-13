@@ -1,3 +1,7 @@
+---
+title: Users
+permalink: index.html
+---
 There are several ways to get information about users.
 
 # Identifying a user

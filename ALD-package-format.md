@@ -1,3 +1,6 @@
+---
+title: ALD Package Format
+---
 ## File format
 ALD packages are standard ZIP files. They are usually stored with the extensions `.alp` but may have any other as well.
 

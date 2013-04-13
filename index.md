@@ -1,3 +1,7 @@
+---
+title: index
+---
+
 Welcome to the ALD wiki!
 
 Check out the following subjects:
