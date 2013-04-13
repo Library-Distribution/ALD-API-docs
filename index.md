@@ -11,7 +11,7 @@ Check out the following subjects:
 * [ALD package format](ALD-package-format.html)
 * [HTTP API](HTTP-API)
     * [Item API](HTTP-API/items.html)
-    * [User API](HTTP-API/users.html)
+    * [User API](HTTP-API/users)
         * [Suspension API](HTTP-API/users/suspension.html)
         * [Registration](HTTP-API/users/registration.html)
     * [Stdlib API](HTTP-API/stdlib)

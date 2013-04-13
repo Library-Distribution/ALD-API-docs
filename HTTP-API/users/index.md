@@ -1,6 +1,5 @@
 ---
 title: Users
-permalink: index.html
 layout: docs
 ---
 There are several ways to get information about users.
