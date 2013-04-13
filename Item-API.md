@@ -6,7 +6,7 @@ The item API is the central part of the API. It can be used to retrieve informat
 ***live***
 
 ### Release
-***[0.1.0](../tree/0.1.0)***
+***[0.2.0](../tree/0.2.0)***
 
 ### Request
 ```
@@ -14,37 +14,49 @@ GET /items/list
 ```
 
 ### Filters
-parameter | description | values    | default
-----------|-------------|-----------|-----------
-`type`    | the type the item should have | one of the item types supported by the server | all types
-`user`    | the user who uploaded the item | a GUID identifying the user | all users
-`name`    | the name of the item (list its versions) | any item name supported by the server | all names
-`version` | a special version of the items to be listed | `latest`, `first` | unspecified
-`tags`    | the tags one of which the item should have | a list of tags, separated by `|` | no tags
-`stdlib`  | ***(deprecated)*** whether the item should be in the stdlib or not | one of the following 3 states: `no`/`false`/`-1`, `both`/`0`, `yes`/`true`/`1`/`+1` | `both` / `0`
-`reviewed` | whether reviewed or unreviewed items should be shown | same as above | `true`
-`downloads`, `downloads-min`, `downloads-max` | the exact, minimum or maximum number of downloads the item should have (min and max can be combined, exact overrides both) | any positive integer (or `0`) | unspecified
-`rating`, `rating-min`, `rating-max` | the exact, minimum or maximum average rating the item should have (as above, min and max can be combined but are overriden by exact) | any positive integer (or `0`) | unspecified
+Parameter | Description                                | Legal Values                                 | Default
+----------|--------------------------------------------|----------------------------------------------|----------
+`type`    | the type the item should have              | one of the item types supported by the server| unspecified
+`user`    | the user who uploaded the item             | a GUID identifying the user                  | unspecified
+`name`    | the name of the item (list its versions)   | any item name supported by the server        | unspecified
+`version` | a special version of the items to be listed| `latest`, `first`                            | unspecified
+`version-min` | the minimum semver version             | any valid semver version                     | unspecified
+`version-max` | the maximum semver version             | any valid semver version                     | unspecified
+`stable`  | list only stable or unstable semver versions| see [[HTTP API#switches]]                   | `both`
+`tags`    | the tags one of which the item should have | a list of tags, separated by vertical bars   | unspecified
+`reviewed`| the review status of the items to be listed| see [[HTTP API#switches]]                    | `true`
+`downloads` | the exact number of item downloads       | any positive integer or `0`                  | unspecified
+`downloads-min` | the minimum number of item downloads | any positive integer or `0`                  | unspecified
+`downloads-max` | the maximum number of item downloads | any positive integer or `0`                  | unspecified
+`rating`  | the exact average item rating              | any positive integer or `0`                  | unspecified
+`rating-min`| the minimum average item rating          | any positive integer or `0`                  | unspecified
+`rating-max`| the maximum average item rating          | any positive integer or `0`                  | unspecified
+
+### Sort criteria
+You can sort by the following criteria:
+
+Criteria   | Description                                  | Note
+-----------|----------------------------------------------|------------------
+`name`     | alphabetically sorted item name              |
+`version`  | the item version, sorting obeys semver rules | only use if required as might have performance impact
+`uploaded` | the date the item was uploaded to the server |
+`downloads`| the number of downloads                      |
+`rating`   | the average item rating                      |
 
 ### Output restrictions
-parameter | description
-----------|-----------------------
-`count`   | the number of items to output, or `all`
-`start`   | start output at the given (zero-based) item index (sorting is not guaranteed, in work for 0.2.0)
+Parameter | Description                                       | Note
+----------|---------------------------------------------------|------------------------------------
+`count`   | the number of items to output, or `all`           |
+`start`   | start output at the given (zero-based) item index | consider specifying sort criteria
 
 ### Response
 #### For JSON:
 ```json
 [
     {
-      "name" : "the item name",
-      "type" : "the item type",
-      "id" : "the id of the item",
-      "version" : "the version of the item",
-      "user" : {
-          "name" : "nickname of the user who uploaded this",
-          "id" : "GUID of the user who uploaded this"
-      }
+      "name" : "ItemName",
+      "id" : "e3891565e6de449b8f7058eb49344f3e",
+      "version" : "0.1.0"
     }
 ]
 ```
@@ -52,8 +64,8 @@ parameter | description
 #### For XML:
 ```xml
 <ald:item-list xmlns:ald="ald://api/items/list/schema/2012">
-    <ald:item ald:name="anyApp" ald:version="0.1" ald:id="e3891565e6de449b8f7058eb49344f3e" ald:user="maul.esel" ald:user-id="248b7165a5f44bbdad838388dba6106a"/>
-    <ald:item ald:name="aLib" ald:version="2.3" ald:id="0bf1abf386b841ffa2f4227e4639f34e" ald:user="maul.esel" ald:user-id="248b7165a5f44bbdad8-8388dba6106a"/>
+    <ald:item ald:name="anyApp" ald:version="0.1.0" ald:id="e3891565e6de449b8f7058eb49344f3e"/>
+    <ald:item ald:name="aLib" ald:version="2.3.1" ald:id="0bf1abf386b841ffa2f4227e4639f34e"/>
     <!-- ... -->
 </ald:item-list>
 ```
