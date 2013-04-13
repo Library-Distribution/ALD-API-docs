@@ -13,7 +13,7 @@ Check out the following subjects:
     * [Item API](HTTP-API/items.html)
     * [User API](HTTP-API/users.html)
         * [Suspension API](HTTP-API/users/suspension.html)
-	* [Registration](HTTP-API/users/registration.html)
+        * [Registration](HTTP-API/users/registration.html)
     * [Stdlib API](HTTP-API/stdlib)
         * [Stdlib Release API](HTTP-API/stdlib/releases.html)
         * [Stdlib Candidate API](HTTP-API/stdlib/candidates.html)
