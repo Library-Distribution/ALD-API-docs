@@ -1,6 +1,5 @@
 ---
 title: HTTP API
-permalink: index.html
 layout: docs
 ---
 # Public HTTP API for ALD
