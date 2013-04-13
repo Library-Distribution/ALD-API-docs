@@ -2,7 +2,7 @@
 title: index
 ---
 
-Welcome to the ALD wiki!
+Welcome to the ALD API documentation!
 
 Check out the following subjects:
 * [[The ALD model]]
