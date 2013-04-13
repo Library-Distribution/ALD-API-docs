@@ -75,56 +75,56 @@ XML Schema available at http://api.libba.net/schema/items/list.xsd.
 ### Status
 ***live***
 
+### Release
+***[0.2.0](../tree/0.2.0)***
+
 ### Request
 ```
 GET /items/describe/:id
 GET /items/describe/:name/:version
 ```
 
-### GET parameters
-parameter | meaning
-----------|-----------------------------------------
-`id`      | the GUID of the item package to retrieve
-`name`    | the name of the item
-`version` | the exact version number of the item, `latest` or `first`
+Parameter | Description             | Legal Values
+----------|-------------------------|---------------------------------------------------------------
+`id`      | the GUID of the item    | a GUID in form of a 128-bit HEX number (without leading `0x`)
+`name`    | the name of the item    | the item's name (a simple string)
+`version` | the version of the item | an exact semver version number, `latest` or `first`
 
 ### Response
 #### For JSON:
 ```json
 {
-    "name" : "item name",
-    "version" : "item version",
+    "name" : "ItemName",
+    "version" : "2.0.0+build2",
     "reviewed" : true,
-    "default" : false,
-    "id" : "item GUID",
-    "description" : "item description text",
-    "type" : "'app' or 'lib'",
-    "user" : "user who uploaded this item",
-    "userID" : "b5fa0b54de54496eac96-177bf245569c",
-    "uploaded" : "upload date",
+    "id" : "e3891565e6de449b8f7058eb49344f3f",
+    "description" : "The item's description text",
+    "type" : "app",
+    "user" : {
+        "name" : "UserA",
+        "id" : "b5fa0b54de54496eac96-177bf245569c"
+    },
+    "uploaded" : "2012-07-06 19:13:15",
+    "rating" : 4.5,
+    "downloads" : 2439,
     "authors" :
         [
             {
-                "name" : "author name",
+                "name" : "SomeAuthor",
                 "user-name" : "AHK forum user name",
                 "homepage" : "http://author-site.com",
                 "mail" : "author@example.com"
+            },
+            {
+                "name" : "AnotherAuthor"
             }
         ],
     "tags" : ["tag1", "tag2"],
-    "links" :
-        [
-            {
-              "name" : "name of the link",
-              "description" : "short description of link",
-              "href" : "http://... - address of link"
-            }
-        ],
-    "dependencies" : "... todo ...",
-    "requirements" : "... todo ..."
+    "links" : ["... todo ..."],
+    "dependencies" : ["... todo ..."],
+    "requirements" : ["... todo ..."]
 }
 ```
-***Note:*** the `"default"` field is deprecated and will be removed soon.
 
 #### For XML:
 ```xml
