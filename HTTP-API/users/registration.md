@@ -41,12 +41,12 @@ empty (`204 No content`)
 ### mail template
 The text for the verification mail. This can contain several variables which are replaced by the respective values in the mail:
 
-variable       | description
----------------|--------------------------
-`{%NAME%}`     | The user name
-`{%MAIL%}`     | The user's email address
-`{%PASSWORD%}` | The user's password in cleartext. Be careful and only include this if necessary.
-`{%ID%}`       | The registration session ID which can be used to retrieve the chaptcha.
+variable                        | description
+--------------------------------|--------------------------
+`{%raw%}{%NAME%}{%endraw%}`     | The user name
+`{%raw%}{%MAIL%}{%endraw%}`     | The user's email address
+`{%raw%}{%PASSWORD%}{%endraw%}` | The user's password in cleartext. Be careful and only include this if necessary.
+`{%raw%}{%ID%}{%endraw%}`       | The registration session ID which can be used to retrieve the chaptcha.
 
 ## Obtain the chaptcha token
 ### Status
