@@ -1,5 +1,6 @@
 ---
 title: Registration
+layout: docs
 ---
 # Workflow
 Registration is now part of the API. The workflow is as follows:

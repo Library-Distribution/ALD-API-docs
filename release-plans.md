@@ -1,5 +1,6 @@
 ---
 title: Release plans
+layout: docs
 ---
 This is a rough estimate on how the first releases will be handled. No dates, no obligations, just expectations.
 

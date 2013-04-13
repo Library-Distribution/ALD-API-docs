@@ -1,5 +1,6 @@
 ---
 title: index
+layout: docs
 ---
 
 Welcome to the ALD API documentation!

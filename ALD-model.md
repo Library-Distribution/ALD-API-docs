@@ -1,5 +1,6 @@
 ---
 title: ALD model
+layout: docs
 ---
 ALD is a model for library and app distribution for AutoHotkey.
 
