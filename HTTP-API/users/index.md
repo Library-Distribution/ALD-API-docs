@@ -11,7 +11,7 @@ In general, there are 2 ways to identify a user: his user name and his user ID.
 
 * The user ID is a GUID which should be unique across all ALD servers. It is assigned on registration and can never be changed. When it comes to saving a user identifier, the ID is the better option. On display, the ALD client can then check the server for the (current) user name.
 
-# Retrieving the list of users
+# Retrieve the list of users
 ## Status
 ***live***
 
@@ -43,7 +43,7 @@ parameter   | allowed values              | description                   | defa
 ```
 XML Schema available at http://api.libba.net/schema/users/list.xsd.
 
-# Retrieving a user description
+# Retrieve a user description
 ## Status
 ***live***
 
@@ -85,7 +85,7 @@ If authentication is fulfilled and matches the requested user or a user with hig
 XML Schema available at http://api.libba.net/schema/users/describe.xsd.
 
 
-# Modifying a user
+# Modify a user
 ## Status
 ***live***
 

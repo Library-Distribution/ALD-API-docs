@@ -37,7 +37,7 @@ parameter  | description
 </ald:releases>
 ```
 
-# Describing a release
+# Describe a release
 ## Status
 ***in development***
 
@@ -74,7 +74,7 @@ parameter | description
 <!-- todo -->
 ```
 
-# Creating a new release
+# Create a new release
 ### Status
 ***developed, but not live***
 
@@ -115,7 +115,7 @@ This API requires authentication. The user must be part of the stdlib team.
 <ald:version xmlns:ald="ald://api/stdlib/releases/create/schema/2012">1.0.0</ald:version>
 ```
 
-# Delete an unpublished release
+# Delete a release
 ## Status
 ***developed, but not live***
 
@@ -131,10 +131,12 @@ parameter | description
 ## Restrictions
 This API requires authentication. The user must be part of the stdlib team.
 
+Only unpublished releases can be deleted.
+
 ## Response
 empty (`204 No content`)
 
-# Modify an unpublished release's metadata
+# Modify a release's metadata
 ## Status
 ***planned***
 
@@ -156,6 +158,8 @@ parameter | description
 
 ## Restrictions
 This API requires authentication. The user must be part of the stdlib team.
+
+Only unpublished releases can be modified.
 
 ### Response
 empty (`204 No content`)

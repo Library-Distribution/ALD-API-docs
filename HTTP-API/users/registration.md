@@ -17,7 +17,7 @@ Permissions can be configured so that registration is blocked to the public. Onl
 
 Also, it is in this case required to access the API via HTTPS as the requests have to be authenticated.
 
-# initiate a registration session
+# Initiate a registration session
 
 ## Status
 ***developed, but not live***
