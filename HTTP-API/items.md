@@ -4,20 +4,19 @@ layout: docs
 ---
 The item API is the central part of the API. It can be used to retrieve information about items and to download them.
 
-# API requests
-## List uploaded items
-### Status
+# List uploaded items
+## Status
 ***live***
 
-### Release
+## Release
 ***[0.2.0](../tree/0.2.0)***
 
-### Request
+## Request
 ```
 GET /items/list
 ```
 
-### Filters
+## Filters
 Parameter | Description                                | Legal Values                                 | Default
 ----------|--------------------------------------------|----------------------------------------------|----------
 `type`    | the type the item should have              | one of the item types supported by the server| unspecified
@@ -36,7 +35,7 @@ Parameter | Description                                | Legal Values           
 `rating-min`| the minimum average item rating          | any positive integer or `0`                  | unspecified
 `rating-max`| the maximum average item rating          | any positive integer or `0`                  | unspecified
 
-### Sort criteria
+## Sort criteria
 You can sort by the following criteria:
 
 Criteria   | Description                                  | Note
@@ -47,14 +46,14 @@ Criteria   | Description                                  | Note
 `downloads`| the number of downloads                      |
 `rating`   | the average item rating                      |
 
-### Output restrictions
+## Output restrictions
 Parameter | Description                                       | Note
 ----------|---------------------------------------------------|------------------------------------
 `count`   | the number of items to output, or `all`           |
 `start`   | start output at the given (zero-based) item index | consider specifying sort criteria
 
-### Response
-#### For JSON:
+## Response
+### For JSON:
 ```json
 [
     {
@@ -65,7 +64,7 @@ Parameter | Description                                       | Note
 ]
 ```
 
-#### For XML:
+### For XML:
 ```xml
 <ald:item-list xmlns:ald="ald://api/items/list/schema/2012">
     <ald:item ald:name="anyApp" ald:version="0.1.0" ald:id="e3891565e6de449b8f7058eb49344f3e"/>
@@ -75,14 +74,14 @@ Parameter | Description                                       | Note
 ```
 XML Schema available at http://api.libba.net/schema/items/list.xsd.
 
-## Retrieve an item description
-### Status
+# Retrieve an item description
+## Status
 ***live***
 
-### Release
+## Release
 ***[0.2.0](../tree/0.2.0)***
 
-### Request
+## Request
 ```
 GET /items/describe/:id
 GET /items/describe/:name/:version
@@ -94,8 +93,8 @@ Parameter | Description             | Legal Values
 `name`    | the name of the item    | the item's name (a simple string)
 `version` | the version of the item | an exact semver version number, `latest` or `first`
 
-### Response
-#### For JSON:
+## Response
+### For JSON:
 ```json
 {
     "name" : "ItemName",
@@ -130,28 +129,28 @@ Parameter | Description             | Legal Values
 }
 ```
 
-#### For XML:
+### For XML:
 ```xml
 <!-- todo, namespace: "ald://api/items/describe/schema/2012" -->
 ```
 
-#### For `application/x-ald-package`:
+### For `application/x-ald-package`:
 the package file (i.e. a ZIP-file).
 
-## Upload a new item
-### Status
+# Upload a new item
+## Status
 ***live***
 
-### Request
+## Request
 ```
 PUT /items/add
 ```
 
-### POST data
+## POST data
 The package file to upload. Note that the `Content-Length` header must be set appropriately.
 
-### Restrictions
+## Restrictions
 This API requires authentication.
 
-### Response
+## Response
 empty (`204 No content`)
