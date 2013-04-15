@@ -36,7 +36,7 @@ At the moment, api.libba.net only supports the required content types. However, 
 # Authentication
 Several methods in this API require authentication. They must of course not be accessed without valid credentials.
 The authentication method being used can either be [HTTP Basic Auth](http://en.wikipedia.org/wiki/Basic_access_authentication) or
-[Digest Access Authentication](http://en.wikipedia.org/wiki/Digest_access_authentication). . If, however, HTTP Basic authentication is supported,
+[Digest Access Authentication](http://en.wikipedia.org/wiki/Digest_access_authentication). If, however, HTTP Basic authentication is supported,
 it must only be allowed via HTTPS.
 
 <div class="libba-specific">
