@@ -41,7 +41,7 @@ parameter   | allowed values              | description                   | defa
     <!-- ... -->
 </ald:user-list>
 ```
-XML Schema available at http://maulesel.ahk4.net/schema/2012/api/users/list.xsd.
+XML Schema available at http://api.libba.net/schema/users/list.xsd.
 
 # Retrieving a user description
 ## Status
@@ -82,7 +82,7 @@ If authentication is fulfilled and matches the requested user or a user with hig
 	ald:privileges="0"
         ald:id="b5fa0b54de54496eac96177bf245569c"/>
 ```
-XML Schema available at http://maulesel.ahk4.net/schema/2012/api/users/describe.xsd.
+XML Schema available at http://api.libba.net/schema/users/describe.xsd.
 
 
 # Modifying a user
