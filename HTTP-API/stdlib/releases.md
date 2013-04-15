@@ -46,7 +46,6 @@ parameter  | description
 GET /stdlib/releases/describe/:version
 ```
 
-## GET parameters
 parameter | description
 ----------|---------------------------
 `version` | The version to describe: either a semver version number or `latest`
@@ -84,7 +83,6 @@ parameter | description
 POST /stdlib/releases/create/:type
 ```
 
-## GET parameters
 parameter | description
 ----------|-----------------------
 `type`    | the update type for the new release: `patch`, `minor` or `major`
@@ -126,7 +124,6 @@ This API requires authentication. The user must be part of the stdlib team.
 DELETE /stdlib/releases/delete/:release
 ```
 
-## GET parameters
 parameter | description
 ----------|--------------------
 `release` | The semver version number of the release to delete
@@ -146,7 +143,6 @@ empty (`204 No content`)
 POST /stdlib/releases/modify/:release
 ```
 
-## GET parameters
 parameter | description
 ----------|--------------------
 `release` | The semver version number of the release to modify
@@ -173,7 +169,6 @@ empty (`204 No content`)
 POST /stdlib/releases/publish/:release
 ```
 
-## GET parameters
 parameter | description
 ----------|------------------
 `release` | The version of the release to publish now.

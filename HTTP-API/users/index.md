@@ -53,7 +53,6 @@ GET /users/describe/:id
 GET /users/describe/:name
 ```
 
-## GET parameters
 parameter | meaning
 ----------|------------------------------------
 `name`    | the nickname of the user to return
@@ -96,7 +95,6 @@ POST /users/modify/:id
 POST /users/modify/:name
 ```
 
-## GET parameters
 parameter | meaning
 ----------|-------------------------------
 `id`      | the user ID of the user to modify

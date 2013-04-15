@@ -58,7 +58,6 @@ variable                        | description
 GET /users/register/token/:id
 ```
 
-## GET parameters
 parameter | description
 ----------|------------------
 `id`      | The registration session ID. This must be obtained via the template for registration initiation.
@@ -77,7 +76,6 @@ the token as PNG image
 POST /users/register/verify/:id
 ```
 
-## GET parameters
 parameter | description
 ----------|------------------
 `id`      | The registration session ID. This must be obtained via the template for registration initiation.
