@@ -9,7 +9,7 @@ The item API is the central part of the API. It can be used to retrieve informat
 ***live***
 
 ## Release
-***[0.2.0](../tree/0.2.0)***
+***[0.2.0](https://github.com/Library-Distribution/ALD-API/tree/0.2.0)***
 
 ## Request
 ```
@@ -79,7 +79,7 @@ XML Schema available at http://api.libba.net/schema/items/list.xsd.
 ***live***
 
 ## Release
-***[0.2.0](../tree/0.2.0)***
+***[0.2.0](https://github.com/Library-Distribution/ALD-API/tree/0.2.0)***
 
 ## Request
 ```
