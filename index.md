@@ -1,21 +1,27 @@
 ---
-title: index
+title: Public HTTP API for ALD
 layout: docs
 ---
+This describes the publicly available HTTP API for ALD. It will provide details about items, users and more.
+To get a better understanding of these docs and libba.net's implementation of them, read the [general notes](general.html) on the API.
 
-Welcome to the ALD API documentation!
+Also have a look on the [Release plans](../release-plans.html).
 
-Check out the following subjects:
+# Get the API version
+## Status
+***developed, but not live***
 
-* [The ALD model](ALD-model.html)
-* [ALD package format](ALD-package-format.html)
-* [HTTP API](HTTP-API)
-    * [Item API](HTTP-API/items.html)
-    * [User API](HTTP-API/users)
-        * [Suspension API](HTTP-API/users/suspension.html)
-        * [Registration](HTTP-API/users/registration.html)
-    * [Stdlib API](HTTP-API/stdlib)
-        * [Stdlib Release API](HTTP-API/stdlib/releases.html)
-        * [Stdlib Candidate API](HTTP-API/stdlib/candidates.html)
-        * [Stdlib Pending Items API](HTTP-API/stdlib/pending.html)
-        * [Stdlib Items API](HTTP-API/stdlib/items.html)
+## Request
+```
+GET /version
+```
+
+## Response
+### For XML:
+```xml
+<ald:version xmlns:ald='ald://api/version/schema/2012'>1.0.0</ald:version>
+```
+### For JSON:
+```json
+{ "version" : "1.0.0" }
+```
