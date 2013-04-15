@@ -19,6 +19,7 @@ The following API documentation is available:
     * [Stdlib Candidate API](stdlib/candidates.html)
     * [Stdlib Pending Items API](stdlib/pending.html)
     * [Stdlib Items API](stdlib/items.html)
+
 ***
 
 # Get the API version
