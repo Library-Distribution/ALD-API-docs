@@ -28,7 +28,7 @@ POST /users/register
 ```
 
 ## POST parameters
-parameter      | description
+Parameter      | Description
 ---------------|-------------------
 `name`         | the new user name
 `mail`         | the mail address of the new user. A verification mail will be sent to this address.
@@ -42,7 +42,7 @@ empty (`204 No content`)
 ## mail template
 The text for the verification mail. This can contain several variables which are replaced by the respective values in the mail:
 
-variable                        | description
+Variable                        | Description
 --------------------------------|--------------------------
 `{%raw%}{%NAME%}{%endraw%}`     | The user name
 `{%raw%}{%MAIL%}{%endraw%}`     | The user's email address
@@ -58,7 +58,7 @@ variable                        | description
 GET /users/register/token/:id
 ```
 
-parameter | description
+Parameter | Description
 ----------|------------------
 `id`      | The registration session ID. This must be obtained via the template for registration initiation.
 
@@ -76,12 +76,12 @@ the token as PNG image
 POST /users/register/verify/:id
 ```
 
-parameter | description
+Parameter | Description
 ----------|------------------
 `id`      | The registration session ID. This must be obtained via the template for registration initiation.
 
 ## POST parameters
-parameter | description
+Parameter | Description
 ----------|------------------
 `token`   | The decoded chaptcha token as string
 

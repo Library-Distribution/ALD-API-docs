@@ -15,7 +15,7 @@ GET /stdlib/releases/list
 ```
 
 ## Optional GET parameters
-parameter  | description
+Parameter  | Description
 -----------|------------------------
 `published`| `0`, `both`: if the requesting user has the required privileges, show unpublished releases as well; `-1`, `false`, `no`: show *only* unpublished releases; `1`, `+1`, `true`, `yes` (default) : show only published releases
 
@@ -46,7 +46,7 @@ parameter  | description
 GET /stdlib/releases/describe/:version
 ```
 
-parameter | description
+Parameter | Description
 ----------|---------------------------
 `version` | The version to describe: either a semver version number or `latest`
 
@@ -83,17 +83,17 @@ parameter | description
 POST /stdlib/releases/create/:type
 ```
 
-parameter | description
+Parameter | Description
 ----------|-----------------------
 `type`    | the update type for the new release: `patch`, `minor` or `major`
 
 ## Optional GET parameters
-parameter | description
+Parameter | Description
 ----------|-----------------------
 `base`    | the release to base the new release on (in terms of version number). Can either be `all` (default) or `published`.
 
 ## Optional POST parameters
-parameter | description
+Parameter | Description
 ----------|-----------------------
 `version` | By default, the version is updated accoring to the `type` parameter. This parameter can be used to increase the new version.
 `date`    | The date the release will be automatically published
@@ -124,7 +124,7 @@ This API requires authentication. The user must be part of the stdlib team.
 DELETE /stdlib/releases/delete/:release
 ```
 
-parameter | description
+Parameter | Description
 ----------|--------------------
 `release` | The semver version number of the release to delete
 
@@ -145,12 +145,12 @@ empty (`204 No content`)
 POST /stdlib/releases/modify/:release
 ```
 
-parameter | description
+Parameter | Description
 ----------|--------------------
 `release` | The semver version number of the release to modify
 
 ## Optional POST parameters
-parameter | description
+Parameter | Description
 ----------|--------------------
 `version` | bump the version number
 `description` | change the release's short description
@@ -173,7 +173,7 @@ empty (`204 No content`)
 POST /stdlib/releases/publish/:release
 ```
 
-parameter | description
+Parameter | Description
 ----------|------------------
 `release` | The version of the release to publish now.
 
