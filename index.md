@@ -5,8 +5,6 @@ layout: docs
 This describes the publicly available HTTP API for ALD. It will provide details about items, users and more.
 To get a better understanding of these docs and libba.net's implementation of them, read the [general notes](general.html) on the API.
 
-Also have a look on the [Release plans](../release-plans.html).
-
 # Overview
 The following API documentation is available:
 
