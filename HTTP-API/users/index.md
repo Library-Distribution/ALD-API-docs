@@ -22,7 +22,7 @@ GET /users/list
 
 ## Optional GET parameters:
 
-parameter   | allowed values              | meaning                       | default
+parameter   | allowed values              | description                   | default
 ------------|-----------------------------|-------------------------------|---------
 `count`     | any integer >= 1 or `all`   | how many user names to return | `all`
 `start`     | any integer >= 0            | at which user index to start  | `0`
@@ -53,7 +53,7 @@ GET /users/describe/:id
 GET /users/describe/:name
 ```
 
-parameter | meaning
+parameter | description
 ----------|------------------------------------
 `name`    | the nickname of the user to return
 `id`      |  the id of the user to return
@@ -95,13 +95,13 @@ POST /users/modify/:id
 POST /users/modify/:name
 ```
 
-parameter | meaning
+parameter | description
 ----------|-------------------------------
 `id`      | the user ID of the user to modify
 `name`    | the nickname of the user to modify
 
 ## Optional POST parameters
-parameter | meaning
+parameter | description
 ----------|----------------------
 `name`    | a new nickname for the user
 `mail`    | a new email address for the user (requires account reactivation)
