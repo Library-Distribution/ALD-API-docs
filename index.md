@@ -7,6 +7,20 @@ To get a better understanding of these docs and libba.net's implementation of th
 
 Also have a look on the [Release plans](../release-plans.html).
 
+# Overview
+The following API documentation is available:
+
+* [Item API](items.html)
+* [User API](users)
+    * [Suspension API](users/suspension.html)
+    * [Registration](users/registration.html)
+* [Stdlib API](stdlib)
+    * [Stdlib Release API](stdlib/releases.html)
+    * [Stdlib Candidate API](stdlib/candidates.html)
+    * [Stdlib Pending Items API](stdlib/pending.html)
+    * [Stdlib Items API](stdlib/items.html)
+***
+
 # Get the API version
 ## Status
 ***developed, but not live***
