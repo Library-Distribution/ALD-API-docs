@@ -7,7 +7,7 @@ This document informs about specifics of the HTTP protocol and other general inf
 It also includes notes specific to the libba.net implementation.
 
 # Root URL
-The root URL for all API requests must be the same. It must support HTTPS (see [below](#toc_3)).
+The root URL for all API requests must be the same. It must support HTTPS (see [below](#toc_4)).
 
 <div class="libba-specific">
 The root URL for the libba.net implementation is <code>http://api.libba.net/</code>. HTTPS can be used via <code>https://api.libba.net/</code>.
