@@ -14,10 +14,10 @@ With the stdlib release API you can retrieve information about the current and o
 GET /stdlib/releases/list
 ```
 
-## Optional GET parameters
-Parameter  | Description                            | Legal Values
------------|----------------------------------------|----------------------------------------
-`published`| the publication status of the releases | see [switches](./../general.html#toc_5)
+## Filters
+Parameter  | Description                            | Legal Values                           | Default
+-----------|----------------------------------------|----------------------------------------|-----------
+`published`| the publication status of the releases | see [switches](./../general.html#toc_5)| `true`
 
 
 ## Restrictions

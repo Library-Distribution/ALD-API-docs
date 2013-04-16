@@ -20,7 +20,7 @@ In general, there are 2 ways to identify a user: his user name and his user ID.
 GET /users/list
 ```
 
-## Optional GET parameters:
+## Output restrictions:
 
 Parameter   | Legal Values                | Description                   | Default
 ------------|-----------------------------|-------------------------------|---------
