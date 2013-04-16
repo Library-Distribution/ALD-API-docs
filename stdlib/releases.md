@@ -93,10 +93,10 @@ Parameter | Description
 `base`    | the release to base the new release on (in terms of version number). Can either be `all` (default) or `published`.
 
 ## Optional POST parameters
-Parameter | Description
-----------|-----------------------
-`version` | By default, the version is updated accoring to the `type` parameter. This parameter can be used to increase the new version.
-`date`    | The date the release will be automatically published
+Parameter     | Description
+--------------|-----------------------
+`version`     | By default, the version is updated accoring to the `type` parameter. This parameter can be used to increase the new version.
+`date`        | The date the release will be automatically published
 `description` | A short description for the release
 
 All these parameters can also later be set or changed through the `modify` API method.
@@ -150,11 +150,11 @@ Parameter | Description
 `release` | The semver version number of the release to modify
 
 ## Optional POST parameters
-Parameter | Description
-----------|--------------------
-`version` | bump the version number
+Parameter     | Description
+--------------|--------------------
+`version`     | bump the version number
 `description` | change the release's short description
-`date`    | The date the release will be automatically published
+`date`        | The date the release will be automatically published
 
 ## Restrictions
 This API requires authentication. The user must be part of the stdlib team.

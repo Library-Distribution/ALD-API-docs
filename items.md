@@ -17,23 +17,23 @@ GET /items/list
 ```
 
 ## Filters
-Parameter | Description                                | Legal Values                                 | Default
-----------|--------------------------------------------|----------------------------------------------|----------
-`type`    | the type the item should have              | one of the item types supported by the server| unspecified
-`user`    | the user who uploaded the item             | a GUID identifying the user                  | unspecified
-`name`    | the name of the item (list its versions)   | any item name supported by the server        | unspecified
-`version` | a special version of the items to be listed| `latest`, `first`                            | unspecified
-`version-min` | the minimum semver version             | any valid semver version                     | unspecified
-`version-max` | the maximum semver version             | any valid semver version                     | unspecified
-`stable`  | list only stable or unstable semver versions| see [switches](./general.html#toc_5)        | `both`
-`tags`    | the tags one of which the item should have | a list of tags, separated by vertical bars   | unspecified
-`reviewed`| the review status of the items to be listed| see [switches](./general.html#toc_5)         | `true`
-`downloads` | the exact number of item downloads       | any positive integer or `0`                  | unspecified
-`downloads-min` | the minimum number of item downloads | any positive integer or `0`                  | unspecified
-`downloads-max` | the maximum number of item downloads | any positive integer or `0`                  | unspecified
-`rating`  | the exact average item rating              | any positive integer or `0`                  | unspecified
-`rating-min`| the minimum average item rating          | any positive integer or `0`                  | unspecified
-`rating-max`| the maximum average item rating          | any positive integer or `0`                  | unspecified
+Parameter       | Description                                 | Legal Values                                 | Default
+----------------|---------------------------------------------|----------------------------------------------|----------
+`type`          | the type the item should have               | one of the item types supported by the server| unspecified
+`user`          | the user who uploaded the item              | a GUID identifying the user                  | unspecified
+`name`          | the name of the item (list its versions)    | any item name supported by the server        | unspecified
+`version`       | a special version of the items to be listed | `latest`, `first`                            | unspecified
+`version-min`   | the minimum semver version                  | any valid semver version                     | unspecified
+`version-max`   | the maximum semver version                  | any valid semver version                     | unspecified
+`stable`        | list only stable or unstable semver versions| see [switches](./general.html#toc_5)         | `both`
+`tags`          | the tags one of which the item should have  | a list of tags, separated by vertical bars   | unspecified
+`reviewed`      | the review status of the items to be listed | see [switches](./general.html#toc_5)         | `true`
+`downloads`     | the exact number of item downloads          | any positive integer or `0`                  | unspecified
+`downloads-min` | the minimum number of item downloads        | any positive integer or `0`                  | unspecified
+`downloads-max` | the maximum number of item downloads        | any positive integer or `0`                  | unspecified
+`rating`        | the exact average item rating               | any positive integer or `0`                  | unspecified
+`rating-min`    | the minimum average item rating             | any positive integer or `0`                  | unspecified
+`rating-max`    | the maximum average item rating             | any positive integer or `0`                  | unspecified
 
 ## Sort criteria
 You can sort by the following criteria:
