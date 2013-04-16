@@ -56,7 +56,7 @@ GET /users/describe/:name
 Parameter | Description
 ----------|------------------------------------
 `name`    | the nickname of the user to return
-`id`      |  the id of the user to return
+`id`      | the id of the user to return
 
 ## Response
 
