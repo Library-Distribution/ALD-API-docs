@@ -23,15 +23,16 @@ The output schematics must match those described in these docs.
 
 Furthermore, servers may support any other output content type or alias them to other mime-types.
 
+<div class="libba-specific">
+At the moment, api.libba.net only supports the required content types. However, <code>application/xml</code> is aliased to <code>text/xml</code>.
+</div>
+
 ## Content Negotiation
 ALD servers must obey the `Accept` header sent by the client. If they do not support the specified types, they must return the respective HTTP error code 406
 with a list of supported content types.
 
 In case the requested type is supported, the server output must be explicitly labeled with the content type it contains via the `Content-Type` header.
 
-<div class="libba-specific">
-At the moment, api.libba.net only supports the required content types. However, <code>application/xml</code> is aliased to <code>text/xml</code>.
-</div>
 
 # Authentication
 Several methods in this API require authentication. They must of course not be accessed without valid credentials.
