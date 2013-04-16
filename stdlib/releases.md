@@ -17,7 +17,7 @@ GET /stdlib/releases/list
 ## Filters
 Parameter  | Description                            | Legal Values                           | Default
 -----------|----------------------------------------|----------------------------------------|-----------
-`published`| the publication status of the releases | see [switches](./../general.html#toc_5)| `true`
+`published`| the publication status of the releases | see [switches](./../general.html#toc_6)| `true`
 
 
 ## Restrictions
@@ -137,7 +137,7 @@ This API requires authentication. The user must be part of the stdlib team.
 Only unpublished releases can be deleted.
 
 ## Response
-empty (`204 No content`)
+[empty](../general.html#toc_3)
 
 # Modify a release's metadata
 ## Status
@@ -165,7 +165,7 @@ This API requires authentication. The user must be part of the stdlib team.
 Only unpublished releases can be modified.
 
 ### Response
-empty (`204 No content`)
+[empty](../general.html#toc_3)
 
 # Publish a release
 ## Status
@@ -184,4 +184,4 @@ Parameter | Description
 This API requires authentication. The user must be the admin of the stdlib team.
 
 ## Response
-empty (`204 No content`)
+[empty](../general.html#toc_3)

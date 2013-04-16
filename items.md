@@ -25,9 +25,9 @@ Parameter       | Description                                 | Legal Values    
 `version`       | a special version of the items to be listed | `latest`, `first`                            | unspecified
 `version-min`   | the minimum semver version                  | any valid semver version                     | unspecified
 `version-max`   | the maximum semver version                  | any valid semver version                     | unspecified
-`stable`        | list only stable or unstable semver versions| see [switches](./general.html#toc_5)         | `both`
+`stable`        | list only stable or unstable semver versions| see [switches](./general.html#toc_6)         | `both`
 `tags`          | the tags one of which the item should have  | a list of tags, separated by vertical bars   | unspecified
-`reviewed`      | the review status of the items to be listed | see [switches](./general.html#toc_5)         | `true`
+`reviewed`      | the review status of the items to be listed | see [switches](./general.html#toc_6)         | `true`
 `downloads`     | the exact number of item downloads          | any positive integer or `0`                  | unspecified
 `downloads-min` | the minimum number of item downloads        | any positive integer or `0`                  | unspecified
 `downloads-max` | the maximum number of item downloads        | any positive integer or `0`                  | unspecified
@@ -153,4 +153,4 @@ The package file to upload. Note that the `Content-Length` header must be set ap
 This API requires authentication.
 
 ## Response
-empty (`204 No content`)
+[empty](./general.html#toc_3)

@@ -111,4 +111,4 @@ Parameter | Description
 This API requires authentication. For modification of the mail address, account reactivation via an email sent to the new address is required.
 
 ## Response
-empty (`204 No content`)
+[empty](../general.html#toc_3)

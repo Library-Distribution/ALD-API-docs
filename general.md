@@ -33,6 +33,8 @@ with a list of supported content types.
 
 In case the requested type is supported, the server output must be explicitly labeled with the content type it contains via the `Content-Type` header.
 
+## Empty Responses
+When a response is described as *"empty"*, this means the server should return a `204 No content` HTTP status code with an empty HTTP body.
 
 # Authentication
 Several methods in this API require authentication. They must of course not be accessed without valid credentials.

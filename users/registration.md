@@ -37,7 +37,7 @@ Parameter      | Description
 `template`     | the template text for the verification mail. See below for details.
 
 ## Response
-empty (`204 No content`)
+[empty](../general.html#toc_3)
 
 ## mail template
 The text for the verification mail. This can contain several variables which are replaced by the respective values in the mail:
@@ -86,7 +86,7 @@ Parameter | Description
 `token`   | The decoded chaptcha token as string
 
 ## Response
-empty (`204 No content`)
+[empty](../general.html#toc_3)
 
 
 
