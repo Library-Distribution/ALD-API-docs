@@ -1,5 +1,5 @@
 ---
-title: Users
+title: User API
 layout: docs
 ---
 

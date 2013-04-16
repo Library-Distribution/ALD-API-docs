@@ -1,5 +1,5 @@
 ---
-title: stdlib API
+title: Stdlib API
 layout: docs
 ---
 The stdlib API describes the so-called stdlib, a list of items recommended to be installed for every user, which might possibly later be done by the AHK installer.

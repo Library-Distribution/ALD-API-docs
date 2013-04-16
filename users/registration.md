@@ -1,5 +1,5 @@
 ---
-title: Registration
+title: Registration API
 layout: docs
 ---
 # Notes
