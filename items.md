@@ -40,7 +40,7 @@ You can sort by the following criteria:
 
 Criteria   | Description                                  | Note
 -----------|----------------------------------------------|------------------
-`name`     | alphabetically sorted item name              |
+`name`     | the item name                                |
 `version`  | the item version, sorting obeys semver rules | only use if required as might have performance impact
 `uploaded` | the date the item was uploaded to the server |
 `downloads`| the number of downloads                      |
