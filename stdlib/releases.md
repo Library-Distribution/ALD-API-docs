@@ -15,10 +15,13 @@ GET /stdlib/releases/list
 ```
 
 ## Optional GET parameters
-Parameter  | Description
------------|------------------------
-`published`| `0`, `both`: if the requesting user has the required privileges, show unpublished releases as well; `-1`, `false`, `no`: show *only* unpublished releases; `1`, `+1`, `true`, `yes` (default) : show only published releases
+Parameter  | Description                            | Legal Values
+-----------|----------------------------------------|----------------------------------------
+`published`| the publication status of the releases | see [switches](./../general.html#toc_5)
 
+
+## Restrictions
+Unpublished releases are only shown to authenticated users who are members of the stdlib team.
 
 ## Response
 ### For JSON:
